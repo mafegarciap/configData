@@ -14,7 +14,7 @@ spring:
     show-sql: true
 
 info:
-  apllication:
+  application:
     name: api-movie
 eureka:
   instance:
