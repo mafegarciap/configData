@@ -10,13 +10,13 @@ spring:
           enabled: true
       routes:
         - id: mmsmovie
-            uri: lb://api-movie
-            predicates:
-              - Path=/api/v1/movies/**
+          uri: lb://api-movie
+          predicates:
+            - Path=/api/v1/movies/**
         - id: mmscatalog
-            uri: lb://api-catalog
-            predicates:
-              - Path=/api/v1/catalog/**
+          uri: lb://api-catalog
+          predicates:
+            - Path=/api/v1/catalog/**
 info:
   app:
     name: ${spring.application.name}
