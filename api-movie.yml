@@ -1,9 +1,9 @@
 server:
- port: ${PORT:${SERVER_PORT:0}}
-
+#  port: ${PORT:${SERVER_PORT:0}}
+  port: ${PORT:8085}
 spring:
-application:
-  name: api-movie
+  application:
+    name: api-movie
 datasource:
   driverClassName: com.mysql.cj.jdbc.Driver
   url: jdbc:mysql://localhost:3307/movie-dev
