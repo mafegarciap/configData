@@ -14,7 +14,7 @@ spring:
 
 info:
   application:
-    name: serie-service
+    name: api-serie
 eureka:
   healthcheck:
     enabled: true
