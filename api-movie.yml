@@ -10,7 +10,7 @@ spring:
 
 datasource:
   driverClassName: com.mysql.cj.jdbc.Driver
-  url: jdbc:mysql://localhost:3307/movie-dev
+  url: jdbc:mysql://localhost:3306/movie-dev
   username: usr-movie
   password: pwd-movie
 
@@ -18,6 +18,8 @@ info:
   application:
     name: api-movie
 eureka:
+  healthcheck:
+    enabled: true
   instance:
     hostname: localhost
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
